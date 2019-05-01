@@ -26,7 +26,7 @@ public class Application {
         while (true) {
             System.out.println("Answer: " + randomFromList(students));
 
-            String question = randomFromList(questions);
+            String question = questions.get(0);
             System.out.println("Question: " + question);
 
             AnswerController.displayMenu();
