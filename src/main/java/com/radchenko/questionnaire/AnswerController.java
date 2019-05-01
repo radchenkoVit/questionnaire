@@ -10,7 +10,10 @@ public class AnswerController {
         while (true) {
             System.out.print("Answered? ");
             String answer = scanner.next();
-            if ("yes".equalsIgnoreCase(answer) || "break".equalsIgnoreCase(answer)) {
+
+            if ("exit".equalsIgnoreCase(answer)) {
+                System.exit(0);
+            } else if ("yes".equalsIgnoreCase(answer)) {
                 break;
             }
 

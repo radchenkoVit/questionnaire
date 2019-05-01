@@ -37,8 +37,8 @@ public class Application {
                 break;
             }
 
-            if ("break".equalsIgnoreCase(scanner.nextLine())) {
-                break;
+            if ("exit".equalsIgnoreCase(scanner.nextLine())) {
+                System.exit(0);
             }
         }
 
